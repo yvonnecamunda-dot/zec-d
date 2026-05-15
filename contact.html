@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Times New Roman', Times, serif; }
+    </style>
+</head>
+<body>
+    <section id="contact" class="px-6 py-16 bg-gray-50">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-blue-900 mb-8 text-center uppercase">Contactez-nous</h2>
+        <div class="w-24 h-1 bg-orange-400 mx-auto mb-8 mt-2"></div>
+        <form class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-white p-8 rounded-xl shadow-lg">
+            <div class="md:col-span-1">
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Nom complet</label>
+                <input type="text" placeholder="Ex: Arch. Sarah M'Polo" class="w-full border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-blue-900 focus:outline-none" required>
+            </div>
+            <div class="md:col-span-1">
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Adresse e-mail</label>
+                <input type="email" placeholder="nom@exemple.com" class="w-full border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-blue-900 focus:outline-none" required>
+            </div>
+            <div class="md:col-span-1">
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Numéro de téléphone</label>
+                <input type="tel" placeholder="+243..." class="w-full border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-blue-900 focus:outline-none">
+            </div>
+            <div class="md:col-span-1">
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Entreprise</label>
+                <input type="text" placeholder="Nom de votre société" class="w-full border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-blue-900 focus:outline-none">
+            </div>
+            <div class="md:col-span-2">
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Objet de la demande</label>
+                <select class="w-full border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-blue-900 focus:outline-none">
+                    <option>Information générale</option>
+                    <option>Partenariat</option>
+                    <option>Recrutement</option>
+                    <option>Autre</option>
+                </select>
+            </div>
+            <div class="md:col-span-2">
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Votre message</label>
+                <textarea rows="4" placeholder="Comment pouvons-nous vous aider ?" class="w-full border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-blue-900 focus:outline-none"></textarea>
+            </div>
+            <div class="md:col-span-2">
+                <button type="submit" class="w-full md:w-auto bg-gray-200 text-blue-900 px-8 py-3 rounded-lg font-bold hover:bg-blue-900 hover:text-white transition-colors uppercase tracking-wider">
+                    Envoyer le message
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+<section id="devis" class="px-6 py-16 bg-white">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-blue-900 mb-8 text-center uppercase">Demander un Devis</h2>
+        <div class="w-24 h-1 bg-orange-400 mx-auto mb-8 mt-2"></div>
+        <form class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-white p-8 rounded-xl shadow-2xl">
+            <input type="text" placeholder="Nom du responsable" class="border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:outline-none" required>
+            <input type="email" placeholder="Email professionnel" class="border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:outline-none" required>
+            
+            <div class="md:col-span-2">
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Service concerné</label>
+                <select class="w-full border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:outline-none">
+                    <option>Construction et Architecture</option>
+                    <option>Géologie et Mines</option>
+                    <option>Génie Électrique et Informatique</option>
+                    <option>Assainissement et Travaux routiers</option>
+                </select>
+            </div>
+
+            <div class="md:col-span-2">
+                <textarea rows="3" placeholder="Description brève du projet (lieu, dimensions, urgence...)" class="w-full border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:outline-none"></textarea>
+            </div>
+
+            <button type="submit" class="md:col-span-2 bg-gray-200 text-blue-900  px-8 py-3 rounded-lg font-bold hover:bg-blue-900 hover:text-white transition-colors uppercase">
+                
+                Obtenir mon devis gratuit
+            </button>
+        </form>
+    </div>
+</section>
+
+<section id="rendezvous" class="px-6 py-16 bg-white">
+    <div class="max-w-3xl mx-auto border-t-4 border-orange-400 pt-12">
+        <h2 class="text-3xl font-bold text-blue-900 mb-6 text-center">Prendre Rendez-vous</h2>
+        <p class="text-center text-gray-600 mb-10">Planifiez une rencontre avec nos experts ingénieurs pour discuter de vos projets ou obtenir des conseils techniques personalisés.</p>
+   
+        <form class="space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input type="date" class="border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-blue-900 w-full" required>
+                <input type="time" class="border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-blue-900 w-full" required>
+            </div>
+            <input type="text" placeholder="Sujet de la consultation" class="w-full border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-blue-900">
+            <button type="submit" class="w-full bg-gray-200 text-blue-900 px-8 py-3 rounded-lg font-bold hover:bg-blue-900 hover:text-white transition-all uppercase">
+                Confirmer la disponibilité
+            </button>
+           
+        </form>
+    </div>
+</section>
+</body>
+</html>

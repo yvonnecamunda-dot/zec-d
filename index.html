@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoe Engineering Company - ZeC Sarl | Accueil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Application de la police Times New Roman */
+        body { font-family: 'Times New Roman', Times, serif; }
+
+        /* Animation de fondu et montée pour le texte */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Animation de zoom continu pour l'image de fond */
+        @keyframes slowZoom {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .animate-fade-up { animation: fadeInUp 1.2s ease-out forwards; }
+        .animate-zoom { animation: slowZoom 15s infinite ease-in-out; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-600 { animation-delay: 0.6s; }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-900 overflow-x-hidden">
+
+    <nav class="bg-slate-200 text-black sticky top-0 z-50 shadow-2xl">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-4xl font-bold tracking-tight text-orange-400 italic"> <span class="text-blue-700">ZeC</span> Sarl</span>
+            </div>
+            <div class="hidden md:flex space-x-8 items-center text-lg">
+                <a href="#accueil" class="hover:text-orange-400 transition font-medium">Accueil</a>
+                <a href="presentation.html" class="hover:text-orange-400 transition font-medium">Présentation</a>
+                <a href="services.html" class="hover:text-orange-400 transition font-medium">Services</a>
+                <a href="equipe.html" class="hover:text-orange-400 transition font-medium">Équipe</a>
+                <a href="zones.html" class="hover:text-orange-400 transition font-medium">Zones</a>
+                <a href="contact.html" class="bg-white text-blue-900 px-6 py-2 rounded-full font-bold hover:bg-orange-200 transition shadow-md">
+                    Contact
+                </a>
+            </div>
+            <div class="md:hidden text-white cursor-pointer">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </div>
+        </div>
+    </nav>
+
+    <header id="accueil" class="relative h-[85vh] flex items-center justify-center overflow-hidden bg-blue-950">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=1920" 
+                 alt="Industrie Engineering" 
+                 class="w-full h-full object-cover opacity-50 animate-zoom">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-blue-950/80"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-6 max-w-5xl mx-auto">
+            <h1 class="text-5xl md:text-5xl font-bold text-white mb-6 animate-fade-up leading-tight">
+                "L'Ingénierie et l'architecture au service du <span class="text-orange-400">développement industriel durable</span>"
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-200 mb-10 animate-fade-up delay-300 max-w-3xl mx-auto italic">
+            `Qualité-durabilité-responsabilité`
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-6 animate-fade-up delay-600">
+                <a href="projets.html" class="bg-blue-900 text-white border-2 border-slate-400 px-10 py-4 rounded-md font-bold text-lg hover:bg-white hover:text-blue-900 transition-all duration-300">
+                    Découvrir notre expertise
+                </a>
+                <a href="contact.html" class="bg-white text-blue-900 px-10 py-4 rounded-md font-bold text-lg hover:bg-orange-300 transition-all duration-300">
+                    Demander un devis
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-16 bg-white relative z-20 -mt-10 shadow-lg max-w-6xl mx-auto rounded-xl">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-12 text-center divide-x divide-gray-100">
+            <div class="px-4">
+                <p class="text-4xl font-black text-blue-900 mb-1">10+</p>
+                <p class="text-sm uppercase tracking-widest font-bold text-gray-500">Années d'Expertise</p>
+            </div>
+            <div class="px-4">
+                <p class="text-4xl font-black text-blue-900 mb-1">150+</p>
+                <p class="text-sm uppercase tracking-widest font-bold text-gray-500">Projets Réalisés</p>
+            </div>
+            <div class="px-4">
+                <p class="text-4xl font-black text-blue-900 mb-1">50+</p>
+                <p class="text-sm uppercase tracking-widest font-bold text-gray-500">Experts Ingénieurs</p>
+            </div>
+            <div class="px-4">
+                <p class="text-4xl font-black text-blue-900 mb-1">6+</p>
+                <p class="text-sm uppercase tracking-widest font-bold text-gray-500">Zones Clés (RDC)</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-blue-950 text-slate-400 py-12 mt-20">
+        <div class="max-w-7xl mx-auto px-6 text-center border-t border-slate-800 pt-10">
+            <h2 class="text-2xl font-bold text-white mb-4">ZeC Sarl</h2>
+            <p class="text-xs uppercase tracking-widest">&copy; 2026 Zoe Engineering Company - ZeC Sarl. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
